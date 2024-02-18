@@ -5,7 +5,6 @@ while True:
     if num == 0:
         print(x[0])
         break
-    else:
-        numsum = sum(map(int, (' '.join(str(num)).split())))
-        if numsum > x[1]:
-            x = (num, numsum)
+    numsum = sum(map(int, (' '.join(str(num)).split())))
+    if numsum > x[1]:
+        x = (num, numsum)

@@ -1,7 +1,10 @@
 
 x = (0, 0)
 while True:
-    num = int(input())
+    num = input()
+    if num.upper() != num.lower():
+        continue
+    num = int(num)
     if num == 0:
         print(x[0])
         break
